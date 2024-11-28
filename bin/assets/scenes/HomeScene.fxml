@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #363237;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomeSceneController">
+   <children>
+      <AnchorPane layoutX="-8.0" layoutY="116.0" prefHeight="290.0" prefWidth="710.0" style="-fx-background-color: #d09683;">
+         <children>
+            <Button fx:id="ClientSceneButton" layoutX="249.0" layoutY="42.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="212.0" style="-fx-background-color: #2d4262;" text="Клієнти" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="RealtorSceneButton" layoutX="249.0" layoutY="121.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="212.0" style="-fx-background-color: #2d4262;" text="Ріелтори" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="RealEstateSceneButton" layoutX="249.0" layoutY="201.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="212.0" style="-fx-background-color: #2d4262;" text="Нерухомість" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="22.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="106.0" layoutY="27.0" text="Рієлторська фірма" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="56.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

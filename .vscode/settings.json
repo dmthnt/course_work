@@ -1,0 +1,5 @@
+{
+  "java.jdt.ls.java.home": "C:\\Java\\jdk-23",
+  "java.project.sourcePaths": ["src"],
+  "java.project.outputPath": "bin"
+}

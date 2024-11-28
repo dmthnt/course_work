@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="843.0" style="-fx-background-color: #d09683;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ClientSceneController">
+   <children>
+      <Button fx:id="BackButton" layoutX="732.0" layoutY="22.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="96.0" style="-fx-background-color: #b6452c;" text="Назад" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="DeleteButton" layoutX="517.0" layoutY="350.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="142.0" style="-fx-background-color: #2d4262; -fx-max-height: 35px;" text="Видалити" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="ClientTable" layoutX="14.0" layoutY="63.0" onMouseClicked="#rowClicked" prefHeight="174.0" prefWidth="813.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="29.599973678588867" text="id" />
+            <TableColumn fx:id="firmNameColumn" prefWidth="92.00003814697266" text="Назва фірми" />
+          <TableColumn fx:id="surnameColumn" prefWidth="100.80001831054688" text="Прізвище" />
+            <TableColumn fx:id="nameColumn" prefWidth="95.20001220703125" text="Ім'я" />
+            <TableColumn fx:id="patronymicColumn" prefWidth="116.7999267578125" text="Побатькове" />
+            <TableColumn fx:id="phoneColumn" prefWidth="113.60000610351562" text="Телефон" />
+            <TableColumn fx:id="serviceColumn" prefWidth="128.00006103515625" text="Послуга" />
+            <TableColumn fx:id="realEstateColumn" prefWidth="133.59991455078125" text="Нерухомість" />
+        </columns>
+      </TableView>
+      <Button fx:id="ChangeButton" layoutX="336.0" layoutY="350.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="162.0" style="-fx-background-color: #2d4262; -fx-max-height: 35px;" text="Редагувати" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="AddButton" layoutX="184.0" layoutY="350.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="134.0" style="-fx-background-color: #2d4262; -fx-max-height: 35px;" text="Додати" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="NameField" layoutX="349.0" layoutY="251.0" prefHeight="34.0" prefWidth="142.0" promptText="Ім'я" style="-fx-border-color: #363237;" />
+      <TextField fx:id="SurnameField" layoutX="186.0" layoutY="251.0" prefHeight="34.0" prefWidth="142.0" promptText="Прізвище" style="-fx-border-color: #363237;" />
+      <TextField fx:id="PatronymicField" layoutX="515.0" layoutY="251.0" prefHeight="34.0" prefWidth="142.0" promptText="Побатькове" style="-fx-border-color: #363237;" />
+      <TextField fx:id="PhoneField" layoutX="681.0" layoutY="251.0" prefHeight="34.0" prefWidth="142.0" promptText="Телефон" style="-fx-border-color: #363237;" />
+      <Label layoutX="343.0" layoutY="15.0" text="Клієнти" textFill="#301b28">
+         <font>
+            <Font name="Arial Bold" size="39.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="ServiceTypeComboBox" layoutX="166.0" layoutY="306.0" prefWidth="150.0" promptText="Тип послуги" />
+      <Label layoutX="538.0" layoutY="310.0" text="id нерухомості:" textFill="#301b28">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="AddRealEstateButton" layoutX="342.0" layoutY="305.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="170.0" style="-fx-background-color: #73605b; -fx-max-height: 35px;" text="Додати нерухомість" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="realEstateIdText" layoutX="660.0" layoutY="310.0" text="0" textFill="#301b28">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="FirmNameField" layoutX="19.0" layoutY="251.0" prefHeight="34.0" prefWidth="142.0" promptText="Назва фірми" style="-fx-border-color: #363237;" />
+   </children>
+</AnchorPane>
